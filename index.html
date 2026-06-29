@@ -512,7 +512,7 @@ const data = {
   2: [
 { en: "life expectancy (n phr) /ˈlaɪf ɪkˈspektənsi/", vn: "tuổi thọ dự tính (tổng số năm một người có thể sống)", tick: false },
   { en: "general (adj) /ˈdʒenrəl/", vn: "chung, tổng quát, phổ biến", tick: false },
-  { en: "increase (v/n) /ɪnˈkriːs/ hoặc /ˈɪnkriːs/", vn: "tăng lên (v); sự gia tăng, tick: false },
+  { en: "increase (v/n) /ɪnˈkriːs/ hoặc /ˈɪnkriːs/", vn: "tăng lên (v); sự gia tăng", tick: false },
   { en: "decade (n) /ˈdekeɪd/", vn: "thập kỷ (giai đoạn 10 năm)", tick: false },
   { en: "possible (adj) /ˈpɒsəbl/", vn: "có thể, khả thi, có khả năng xảy ra", tick: false },
   { en: "explanation (n) /ˌekspləˈneɪʃn/", vn: "lời giải thích, sự thanh minh", tick: false },
@@ -564,7 +564,8 @@ const data = {
 
 const lessonAudios = {
   1: "audio/Lesson 1 Vocab.wav",
-  2: "",
+  2: "audio/Lesson 2 Vocab.wav",
+  3: "",
 
 
 };
@@ -624,6 +625,7 @@ function setMode(mode){
 
 document.getElementById("wordList").onchange = loadList;
 loadList();
+
 
 function speakWord(text){
 
@@ -733,6 +735,7 @@ listCopy[index].vn;
 }
 
 }
+
 /********** EXERCISES **********/
 function loadExercises(){
   const box=document.getElementById("exercise");
